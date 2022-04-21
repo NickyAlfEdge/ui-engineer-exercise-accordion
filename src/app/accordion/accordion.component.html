@@ -1,0 +1,27 @@
+<div class="accordion">
+  <div *ngIf="title else noTitleData" class="accordion-title">
+    {{ title }}
+  </div>
+  <ng-template #noTitleData>
+    <div class="accordion-title-no-data">
+      <strong class="accordion-title-no-data-text">No Title Data Available</strong>
+    </div> 
+  </ng-template>
+  <hr class="accordion-title-seperator">
+  <div *ngIf="faqs | async as faqs else noData">
+    <div *ngFor="let faq of faqs">
+      <accordion-item 
+        [id]="faq.id" 
+        [question]="faq.question" 
+        [answer]="faq.answer"
+        (contentDisplayed)="toggleAccordionItems($event)"
+      >
+      </accordion-item>
+    </div>
+  </div>
+</div>
+<ng-template #noData>
+  <div class="accordion-no-data">
+    <strong class="accordion-no-data-text">No Data Available</strong>
+  </div> 
+</ng-template>

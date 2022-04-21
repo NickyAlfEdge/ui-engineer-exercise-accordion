@@ -1,0 +1,84 @@
+.accordion-item {
+  border-bottom: 2px solid black;
+}
+
+.accordion-item-header,
+.accordion-item-header-active {
+  display: flex;
+  padding: 10px 15px 10px 15px;
+  min-height: 50px;
+}
+
+.accordion-item-header {
+  background: white;
+}
+
+.accordion-item-header-active {
+  background: rgb(153, 153, 153);
+}
+
+.accordion-item-key,
+.accordion-item-title,
+.accordion-item-toggle {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.accordion-item-key {
+  margin-right: 20px;
+  font-family: 'Oswald';
+  font-weight: bold;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: large;
+}
+
+.accordion-item-title {
+  margin-right: auto;
+  font-family: 'Oswald';
+  font-weight: 300;
+  font-style: normal;
+  font-size: small;
+  overflow-wrap: break-word;
+  overflow: auto;
+}
+
+.accordion-item-toggle {
+  display: flex;
+  margin-left: auto;
+  min-width: 30px;
+  min-height: 30px;
+  background: rgb(255, 204, 10);
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.svg-rotate__icon {
+  margin: auto;
+}
+
+.accordion-item-body {
+  font-family: 'Oswald';
+  font-weight: normal;
+  font-style: normal;
+  font-size: small;
+}
+
+.accordion-item-body-text {
+  padding: 10px 15px 10px 15px;
+}
+
+.accordion-item-no-data {
+  display: flex;
+  height: 50px;
+  width: 100%;
+  font-family: 'Oswald';
+  font-weight: bold;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: small;
+}
+
+.accordion-item-no-data-text {
+  margin: auto;
+}

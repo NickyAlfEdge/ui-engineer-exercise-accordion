@@ -1,0 +1,44 @@
+.accordion {
+  width: 100%;
+}
+
+.accordion-title {
+  font-family: 'Oswald';
+  font-weight: bold;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: larger;
+}
+
+.accordion-title-seperator {
+  height: 15px;
+  background: black;
+  border: none;
+  margin-bottom: 15px;
+}
+
+.accordion-no-data {
+  display: flex;
+  height: 50px;
+  font-family: 'Oswald';
+  font-weight: bold;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: medium;
+  border-bottom: 2px solid black;
+}
+
+.accordion-title-no-data {
+  display: flex;
+  height: 50px;
+  font-family: 'Oswald';
+  font-weight: bold;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: medium;
+}
+
+.accordion-no-data-text,
+.accordion-title-no-data-text {
+  margin: auto;
+}
